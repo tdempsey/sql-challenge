@@ -15,20 +15,20 @@ CREATE TABLE "Department" (
 );
 
 CREATE TABLE "Dept_Emp" (
-    "emp_no" varchar(8)   NOT NULL,
+    "emp_no" varchar(4)   NOT NULL,
     "dept_no" varchar(4)   NOT NULL
 );
 
 CREATE TABLE "Dept_Manager" (
     "dept_no" varchar(5)   NOT NULL,
-    "emp_no" varchar(8)   NOT NULL,
+    "emp_no" varchar(30)   NOT NULL,
     CONSTRAINT "pk_Dept_Manager" PRIMARY KEY (
         "dept_no"
      )
 );
 
 CREATE TABLE "Employees" (
-    "emp_no" varchar(8)   NOT NULL,
+    "emp_no" varchar(5)   NOT NULL,
     "emp_title_id" varchar(5)   NOT NULL,
     "birth_date" date   NOT NULL,
     "first_name" varchar(25)   NOT NULL,
